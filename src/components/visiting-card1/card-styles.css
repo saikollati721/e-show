@@ -1,0 +1,100 @@
+.card_container{
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    height: 25vh;
+    border-radius: 10px;
+    /* border: 1px solid rgb(185, 184, 184); */
+    box-shadow: 3px 3px 15px 0px rgba(171,171,171,1);
+
+    padding: 10px;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.card_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.card_header{
+    width: 90%;
+    /* height: 10vh; */
+    /* background-color: purple; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    justify-content: left;
+}
+.logo{
+    /* display: flex; */
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    max-width: 50px;
+}
+.logo_img{
+    max-width: 50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.brand_container{
+    width: 90%;
+    padding-left: 1s0px;
+
+}
+.brand_title{
+    font-size: 20px;
+    /* color: #2596be */
+}
+.brand_subtitle{
+    font-size: 10px;
+}
+.body_details{
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
+}
+.full_name{
+    /* color: #2596be */
+}
+.designation{
+    font-size: 13px;
+}
+.email{
+    font-size: 12px;
+
+}
+.card_body{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    /* border-bottom: 2px solid #2596be; */
+}
+
+.card_footer{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.footer_address{
+    width: 60%;
+}
+.address_line1{
+    font-size: 12px
+}
+.address_line2{
+    font-size: 12px
+}
+.website{
+    font-size: 10px;
+}
+.footer_phone{
+    width: 40%;
+    font-size: 15px;
+    align-items: right;
+    align-items: center;
+}
