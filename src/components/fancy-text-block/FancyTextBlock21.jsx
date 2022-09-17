@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import ModalVideo from "react-modal-video";
 
 const FancyTextBlock21 = () => {
   const [isOpen, setOpen] = useState(false);
