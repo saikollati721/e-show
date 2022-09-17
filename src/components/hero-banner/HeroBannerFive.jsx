@@ -29,7 +29,7 @@ const HeroBannerFive = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              We connect and expose your identity to the world
+              We connect and expose your identity to the work
             </p>
           </div>
         </div>

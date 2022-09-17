@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 
 const FancyTextBlock21 = () => {
   const [isOpen, setOpen] = useState(false);
@@ -47,13 +47,13 @@ const FancyTextBlock21 = () => {
         {/* End .col */}
       </div>
 
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         autoplay
         isOpen={isOpen}
         videoId="FDaF8_5dzzk"
         onClose={() => setOpen(false)}
-      />
+      /> */}
     </>
   );
 };
