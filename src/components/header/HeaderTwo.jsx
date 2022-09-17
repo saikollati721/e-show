@@ -28,7 +28,7 @@ const HeaderTwo = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/">
-              <img src="images/logo/e_show_logo.svg" alt="brand logo" />
+              <img src="/images/logo/e_show_logo.svg" alt="brand logo" />
             </Link>
           </div>
           {/* End Logo */}

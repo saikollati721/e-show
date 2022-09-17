@@ -78,6 +78,7 @@ import {
   Routes as Switch,
 } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
+import ProductLanding from "../views/ProductLanding";
 
 const Routes = () => {
   return (
@@ -85,7 +86,7 @@ const Routes = () => {
       <Router>
         <ScrollTopBehaviour />
         <Switch>
-          <Route path="/" element={<PreviewMain />} />
+          <Route path="/" element={<ProductLanding />} />
           {/* <Route path="/event-organizer" component={EventOrganizer} />
           <Route path="/doc-landing" component={DocLanding} />
           <Route path="/project-management" component={ProjectManagement} />

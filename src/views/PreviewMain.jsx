@@ -22,7 +22,7 @@ const PreviewMain = () => {
   return (
     <div className="main-page-wrapper p0">
       <div className="landing-banner" id="intro">
-        <HeaderTwo />
+        <Header />
 
         <div className="container">
           <div className="text-wrapper">

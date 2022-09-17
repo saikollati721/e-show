@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import AvatarLogo from "./2nd_logo.png";
 
 import "./card-styles.css";
+
 function Card(props) {
   const hiddenFileInput = React.useRef(null);
   const [logo, setLogo] = useState(null);
