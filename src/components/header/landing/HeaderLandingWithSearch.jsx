@@ -3,10 +3,11 @@ import Scrollspy from "react-scrollspy";
 import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import HeaderPopupForm from "../../form/HeaderPopupForm";
+import SearchIcon from "@mui/icons-material/Search";
 
 Modal.setAppElement("#root");
 
-const HeaderLanding = () => {
+const HeaderLandingWithSearch = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -48,7 +49,7 @@ const HeaderLanding = () => {
 
           <nav id="mega-menu-holder" className="navbar navbar-expand-lg">
             <div className="container nav-container">
-              <div className="mob-header">
+              {/* <div className="mob-header">
                 <button className="toggler-menu" onClick={handleClick}>
                   <div className={click ? "active" : ""}>
                     <span></span>
@@ -56,15 +57,27 @@ const HeaderLanding = () => {
                     <span></span>
                   </div>
                 </button>
-              </div>
+              </div> */}
               {/* End Header */}
 
               <div
-                className="navbar-collapse collapse landing-menu-onepage"
+                className="navbar-collapse  landing-menu-onepage"
                 id="navbarSupportedContent"
               >
                 <div className="d-lg-flex justify-content-between align-items-center">
-                  <Scrollspy
+                  <div className="search-box-container mt-10 md-mt-10 md-mb-20">
+                    <div className="search-box-wrapper">
+                      <form className="search-form">
+                        <input
+                          type="text"
+                          placeholder="Search your word"
+                          className="search-box"
+                        />
+                      </form>
+                      <SearchIcon className="search-icon" />
+                    </div>
+                  </div>
+                  {/* <Scrollspy
                     className="navbar-nav  main-side-nav font-gordita"
                     items={[
                       "features",
@@ -101,7 +114,7 @@ const HeaderLanding = () => {
                         Feedback
                       </a>
                     </li>
-                  </Scrollspy>
+                  </Scrollspy> */}
                 </div>
               </div>
             </div>
@@ -116,100 +129,9 @@ const HeaderLanding = () => {
       </div>
       {/* /.theme-main-menu */}
 
-      {/* Mobile Menu Start */}
-      <div className={click ? "mobile-menu  menu-open" : "mobile-menu"}>
-        <div className="logo order-md-1">
-          <Link to="/">
-            <img src="/images/logo/e_show_logo.svg" alt="brand" />
-          </Link>
-          {/* <div className="fix-icon text-dark" onClick={handleClick}>
-            <img src="images/icon/close.svg" alt="icon" />
-          </div> */}
-          {/* Mobile Menu close icon */}
-        </div>
-
-        <Scrollspy
-          className="navbar-nav"
-          id="theme-menu-list"
-          items={["features", "about", "product", "pricing", "feedback"]}
-          currentClassName="active"
-          offset={-200}
-        >
-          <li className="nav-item">
-            <a href="#features" className="nav-link" onClick={handleClick}>
-              Features
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#about" className="nav-link" onClick={handleClick}>
-              About Us
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#product" className="nav-link" onClick={handleClick}>
-              Product
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#pricing" className="nav-link" onClick={handleClick}>
-              Pricing
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#feedback" className="nav-link" onClick={handleClick}>
-              Feedback
-            </a>
-          </li>
-        </Scrollspy>
-      </div>
-      {/* Mobile Menu End */}
-
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={toggleModalOne}
-        contentLabel="My dialog"
-        className="custom-modal  modal-contact-popup-one"
-        overlayClassName="custom-overlay"
-        closeTimeoutMS={500}
-      >
-        <div className="box_inner ">
-          <main className="main-body box_inner modal-content clearfix">
-            <button className="close" onClick={toggleModalOne}>
-              <img src="images/icon/close.svg" alt="close" />
-            </button>
-            {/* End close icon */}
-
-            <div className="left-side">
-              <div className="d-flex flex-column justify-content-between h-100">
-                <div className="row">
-                  <div className="col-xl-10 col-lg-8 m-auto">
-                    <blockquote>
-                      “I never dreamed about success. I worked for it.”
-                    </blockquote>
-                    <span className="bio">—Estée Lauder</span>
-                  </div>
-                </div>
-                <img
-                  src="images/assets/ils_18.svg"
-                  alt=""
-                  className="illustration mt-auto"
-                />
-              </div>
-            </div>
-            {/* /.left-side */}
-
-            <div className="right-side">
-              <h2 className="form-title">Login</h2>
-              <HeaderPopupForm />
-            </div>
-            {/*  /.right-side */}
-          </main>
-          {/* /.main-body */}
-        </div>
-      </Modal>
       {/* End  Modal For Request a demo */}
     </>
   );
 };
 
-export default HeaderLanding;
+export default HeaderLandingWithSearch;

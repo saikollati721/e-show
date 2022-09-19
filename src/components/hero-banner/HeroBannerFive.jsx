@@ -71,7 +71,7 @@ const HeroBannerFive = () => {
           data-aos-duration="1200"
           data-aos-delay="400"
         >
-          Different Platform? <span onClick={toggleModalOne}>Contact us</span>
+          Different Platform? <span onClick={toggleModalOne}>Login</span>
         </p>
         {/* End sign-in-call */}
       </div>

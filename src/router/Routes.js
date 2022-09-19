@@ -79,6 +79,7 @@ import {
 } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
 import ProductLanding from "../views/ProductLanding";
+import SearchPage from "../views/SearchPage";
 
 const Routes = () => {
   return (
@@ -87,8 +88,8 @@ const Routes = () => {
         <ScrollTopBehaviour />
         <Switch>
           <Route path="/" element={<ProductLanding />} />
-          {/* <Route path="/event-organizer" component={EventOrganizer} />
-          <Route path="/doc-landing" component={DocLanding} />
+          <Route path="/search" element={<SearchPage />} />
+          {/*<Route path="/doc-landing" component={DocLanding} />
           <Route path="/project-management" component={ProjectManagement} />
           <Route path="/customer-support" component={CustomerSupport} />
           <Route path="/product-landing" component={ProductLanding} />

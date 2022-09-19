@@ -12720,3 +12720,25 @@ body .theme-btn-nine:hover {
   transform: translateY(-50%);
   left: 0;
 }
+
+.search-box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-box-wrapper{
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px;
+}
+.search-box{
+  border: none;
+  padding: 2px;
+}
+.search-icon{
+  font-size: xx-large !important;
+}
